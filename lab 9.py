@@ -1,4 +1,4 @@
-#Task 1
+'''#Task 1
 from audioop import reverse
 from operator import truediv
 
@@ -37,16 +37,6 @@ print(top_keys)
 
 #Task 6
 
-n = int(input("Enter a number: "))
-b = int(input("Enter a base: "))
-if b == 2:
-    print(bin(n)[2:])
-elif b == 8:
-    print(oct(n)[2:])
-elif b == 10:
-    print(int(n))
-elif b == 16:
-    print(hex(n)[2:])
 
 
 #Task 7
@@ -58,5 +48,19 @@ for i in range(n):
         row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
     triangle.append(row)
 for row in triangle:
-    print(" " * (n - len(row)), " ".join(map(str, row)))
+    print(" " * (n - len(row)), " ".join(map(str, row)))'''
 
+n = input("Enter a number: ")
+b = int(input("Enter a base: "))
+if b == 2:
+    print(int(n, 2))
+    print(str(n))
+elif b == 8:
+    print(int(n, 8))
+    print(str(n))
+elif b == 10:
+    print(int(n))
+    print(str(n))
+elif b == 16:
+    print(int(n, 16))
+    print(str(n))
