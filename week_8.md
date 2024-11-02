@@ -1,8 +1,9 @@
+**1.1**
 a = 'Pulp Friction'
 n = list(a.lower())
 print(n)
 
-
+**1.2**
 input_list = [('p', 2), ('u', 1), ('l', 1), (' ', 1), ('f', 1), ('i', 2), ('c', 1), ('t', 1), ('o', 1), ('n', 1)]
 list_vow = []
 list_cons = []
@@ -21,7 +22,7 @@ print("list_vow =", list_vow)
 print("list_cons =", list_cons)
 print("list_sym =", list_sym)
 
-
+**2.1**
 student_name = "Adam"
 assignment_scores = [82, 56, 44, 30]
 lab_scores = [78.20, 77.20]
@@ -36,7 +37,7 @@ student = {
 
 print("student =", student)
 
-
+**2.2**
 student_name = "Adam"
 assignment_scores = [82, 56, 44, 30]
 lab_scores = [78.20, 77.20]
@@ -58,7 +59,7 @@ for k in test_scores:
 print("student =", count)
 
 
-
+**2.3**
 student_name = "Adam"
 assignment_scores = [82, 56, 44, 30]
 lab_scores = [78.20, 77.20]
@@ -83,9 +84,7 @@ for k in test_scores:
 final = (0.3 * avg_assaignment) + (0.5 * avg_lab) + (0.2 * avg_score)
 print("student =", count, final)
 
-
-from typing import final
-
+**2.4**
 student_name = "Adam"
 assignment_scores = [82, 56, 44, 30]
 lab_scores = [78.20, 77.20]
