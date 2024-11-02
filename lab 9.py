@@ -36,9 +36,17 @@ top_keys = sorted(my_dict, key=my_dict.get, reverse=True)[:3]
 print(top_keys)
 
 #Task 6
-a = int(input('Enter a number: '))
-print(str(a))
-print(type(a))
+
+n = int(input("Enter a number: "))
+b = int(input("Enter a base: "))
+if b == 2:
+    print(bin(n)[2:])
+elif b == 8:
+    print(oct(n)[2:])
+elif b == 10:
+    print(int(n))
+elif b == 16:
+    print(hex(n)[2:])
 
 
 #Task 7
@@ -51,3 +59,4 @@ for i in range(n):
     triangle.append(row)
 for row in triangle:
     print(" " * (n - len(row)), " ".join(map(str, row)))
+
